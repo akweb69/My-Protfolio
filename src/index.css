@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  overflow-x: hidden;
+}
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: rgb(0, 0, 31);
+  min-height: 100vh;
+  color: white;
+}
+
+/* Rotating animation */
+.circle-animation {
+  animation: rotateCircle 12s linear infinite; /* Infinite rotation */
+  position: relative;
+}
+
+@keyframes rotateCircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Neon effect for icons */
+.neon-effect svg {
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
+  transform-origin: center; /* Ensures scaling happens from the center */
+}
+
+.neon-effect:hover svg {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
+}
