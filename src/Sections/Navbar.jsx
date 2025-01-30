@@ -13,7 +13,7 @@ const Navbar = () => {
 
     return (
         <div className="w-full bg-[rgb(0,0,31)] sticky top-0 z-50 text-white">
-            <div className="max-w-screen-xl mx-auto px-4 py-2 flex items-center justify-between">
+            <div className="w-11/12 mx-auto  py-2 flex items-center justify-between">
                 {/* Left Side - Name */}
                 <motion.div
                     initial={{ x: -100, opacity: 0 }}
