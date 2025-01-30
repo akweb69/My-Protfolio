@@ -85,7 +85,7 @@ const Navbar = () => {
                     className="hidden md:flex items-center gap-2 cursor-pointer bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition duration-200"
                 >
                     <FaDownload />
-                    <a href="https://drive.google.com/uc?export=download&id=19vOAcA2yfkFMQ4W8GvDjLCmJC-8Ye6W0" target="_blank" rel="noopener noreferrer">
+                    <a href="https://drive.google.com/uc?export=download&id=18rtaXkX9g4ZpWcAbA36uEhwa3z5sasZm" target="_blank" rel="noopener noreferrer">
                         Download CV
                     </a>
                 </motion.div>
@@ -137,7 +137,7 @@ const Navbar = () => {
                         Contact
                     </Link>
                     <a
-                        href="/cv"
+                        href="https://drive.google.com/uc?export=download&id=18rtaXkX9g4ZpWcAbA36uEhwa3z5sasZm"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-white hover:text-indigo-500 transition duration-200"
