@@ -22,10 +22,10 @@ const skills = [
 
 const Education = () => {
     return (
-        <div className=" py-10 md:py-20 px-6 flex flex-col items-center">
+        <div className=" py-10   px-6 flex flex-col items-center">
             {/* Title and Subtitle */}
             <h2 className="text-4xl font-bold text-white mb-4">Education</h2>
-            <p className="text-lg text-gray-300 mb-10 text-center">
+            <p className="text-lg text-gray-300 text-center">
                 A glimpse into my academic journey and technical expertise.
             </p>
 
@@ -51,14 +51,14 @@ const Education = () => {
                 </motion.div>
 
                 {/* Right Column: Circular Animation */}
-                <div className="relative flex items-center justify-center w-full min-h-[500px] overflow-hidden">
+                <div className="relative flex items-center justify-center w-full h-[350px] overflow-hidden">
                     {/* Center Name */}
                     <div className="absolute w-24 h-24 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center shadow-lg">
                         <p className="text-white font-bold text-lg text-center">ABU KALAM</p>
                     </div>
 
                     {/* Rotating Circle */}
-                    <div className="circle-animation w-full h-full rounded-full relative">
+                    <div className="circle-animation  h-full  rounded-full relative">
                         {skills.map((skill, index) => {
                             const angle = (index / skills.length) * 2 * Math.PI; // Calculate angle for circular placement
                             const radius = 130; // Radius of the circle

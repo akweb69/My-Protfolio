@@ -134,7 +134,7 @@ const Testimonials = () => {
 
 
     return (
-        <div className="w-full py-10 md:py-20 bg-[rgb(0,0,31)]">
+        <div className="w-full py-10 md:py-20 bg-gradient-to-b from-[#040908] to-[rgb(0,0,31)]">
             <div className="w-11/12 mx-auto">
                 <h1 className="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-pink-600 to-violet-600 w-fit mx-auto">Testimonials</h1>
                 <p className="py-4 pb-10 text-gray-400 text-center">

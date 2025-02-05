@@ -16,6 +16,7 @@ const Navbar = () => {
             <div className="w-11/12 mx-auto  py-2 flex items-center justify-between">
                 {/* Left Side - Name */}
                 <motion.div
+
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ duration: 1, delay: 0.2 }}

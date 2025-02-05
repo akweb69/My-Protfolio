@@ -21,23 +21,23 @@ const ContactMe = () => {
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="flex flex-col bg-[rgb(10,10,50)] p-8 rounded-lg shadow-lg"
+                    className="flex flex-col bg-[#040908] p-8 rounded-lg shadow-lg"
                 >
                     <h3 className="text-2xl font-semibold text-white mb-6">Contact Form</h3>
                     <div>
                         <input
                             type="text"
                             placeholder="Your Name"
-                            className="bg-[rgb(30,30,60)] text-white p-3 rounded-md mb-4 w-full"
+                            className="bg-[#0234] text-white p-3 rounded-md mb-4 w-full"
                         />
                         <input
                             type="email"
                             placeholder="Your Email"
-                            className="bg-[rgb(30,30,60)] text-white p-3 rounded-md mb-4 w-full"
+                            className="bg-[#0234] text-white p-3 rounded-md mb-4 w-full"
                         />
                         <textarea
                             placeholder="Your Message"
-                            className="bg-[rgb(30,30,60)] text-white p-3 rounded-md mb-4 w-full h-32"
+                            className="bg-[#0234] text-white p-3 rounded-md mb-4 w-full h-32"
                         />
                         <button
                             type="submit"
@@ -53,7 +53,7 @@ const ContactMe = () => {
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="flex flex-col bg-[rgb(10,10,50)] p-8 rounded-lg shadow-lg"
+                    className="flex flex-col bg-[#040908] p-8 rounded-lg shadow-lg"
                 >
                     <h3 className="text-2xl font-semibold text-white mb-6">Get in Touch</h3>
                     <div className="flex items-center mb-4">
