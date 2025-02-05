@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import { FaReact, FaNodeJs, FaDatabase, FaJs, FaCss3Alt, FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
-import videoBg from "../assets/videos/7670836-uhd_3840_2160_30fps.mp4";
+import videoBg from "../assets/videos/prev1.mp4";
 
 const skills = [
     { icon: <FaReact className='text-blue-400' />, name: "React.js" },

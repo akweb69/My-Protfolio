@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import img2 from "../assets/images/visa.png"
 import { Link } from 'react-router-dom';
 import img22 from "../assets/images/Screenshot 2025-01-30 070904.png"
-import videobg from "../assets/videos/3130284-uhd_3840_2160_30fps.mp4";
+import videobg from "../assets/videos/main1.mp4";
 
 const Projects = () => {
     return (

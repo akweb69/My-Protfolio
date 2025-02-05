@@ -3,7 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 import { FaDownload, FaFolderOpen, FaFacebook, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import img1 from "../assets/images/my.png";
-import videobg from "../assets/videos/3130284-uhd_3840_2160_30fps.mp4";
+import videobg from "../assets/videos/main1.mp4";
 
 const Hero = () => {
     return (
