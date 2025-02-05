@@ -22,7 +22,7 @@ const skills = [
 
 const Education = () => {
     return (
-        <div className="bg-[rgb(0,0,31)] py-10 md:py-20 px-6 flex flex-col items-center">
+        <div className=" py-10 md:py-20 px-6 flex flex-col items-center">
             {/* Title and Subtitle */}
             <h2 className="text-4xl font-bold text-white mb-4">Education</h2>
             <p className="text-lg text-gray-300 mb-10 text-center">

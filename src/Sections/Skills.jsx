@@ -32,7 +32,7 @@ const skills = [
 
 const Skills = () => {
     return (
-        <div className="bg-[rgb(0,0,31)] py-10 md:py-20 flex flex-col items-center justify-center w-11/12 mx-auto">
+        <div className=" py-10 md:py-20 flex flex-col items-center justify-center w-11/12 mx-auto">
             {/* Title and Subtitle */}
             <h2 className="text-4xl font-bold text-white mb-4">My Skills</h2>
             <p className="text-lg text-gray-300 mb-10">Explore the expertise I bring to the table</p>
