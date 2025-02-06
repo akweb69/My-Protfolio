@@ -6,44 +6,35 @@ import PrevPage from "../Utils/PrevPage";
 import Loader from "../Utils/Loader";
 
 const Home = () => {
-    const [display, setDisplay] = useState(false)
-    const [load, setLoad] = useState(true)
-
+    const [display, setDisplay] = useState(false);
+    const [load, setLoad] = useState(true);
 
     useEffect(() => {
-
-        const handleLoad = () => {
+        // Simulating a loading state instead of relying on window.load
+        setTimeout(() => {
+            setLoad(false);
             setDisplay(true);
-            setLoad(false)
+
             setTimeout(() => {
-                setDisplay(false)
+                setDisplay(false);
             }, 7000);
-        };
-        window.addEventListener("load", handleLoad);
-        return () => window.removeEventListener("load", handleLoad);
+        }, 2000); // Simulating an initial load delay
     }, []);
 
-
-
     return (
-        <>{
-            load ? <div className=""><Loader></Loader></div> :
-                <div className="">
-
-                    {
-                        display ? <div className="">
-                            <PrevPage></PrevPage>
-                        </div>
-                            : <div>
-                                <Navbar></Navbar>
-                                <Outlet></Outlet>
-                                <Footer></Footer>
-                            </div>
-                    }
-                </div>
-        }
+        <>
+            {load ? (
+                <Loader />
+            ) : display ? (
+                <PrevPage />
+            ) : (
+                <>
+                    <Navbar />
+                    <Outlet />
+                    <Footer />
+                </>
+            )}
         </>
-
     );
 };
 
