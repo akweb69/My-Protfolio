@@ -1,27 +1,47 @@
 import { Outlet } from "react-router-dom";
 import Footer from "../Sections/Footer";
 import Navbar from "../Sections/Navbar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PrevPage from "../Utils/PrevPage";
+import Loader from "../Utils/Loader";
 
 const Home = () => {
-    const [display, setDisplay] = useState(true)
+    const [display, setDisplay] = useState(false)
+    const [load, setLoad] = useState(true)
 
-    setTimeout(() => {
-        setDisplay(false)
-    }, 7000);
+
+    useEffect(() => {
+
+        const handleLoad = () => {
+            setDisplay(true);
+            setLoad(false)
+            setTimeout(() => {
+                setDisplay(false)
+            }, 7000);
+        };
+        window.addEventListener("load", handleLoad);
+        return () => window.removeEventListener("load", handleLoad);
+    }, []);
+
+
+
     return (
-        <>
-            {
-                display ? <div className="">
-                    <PrevPage></PrevPage>
+        <>{
+            load ? <div className=""><Loader></Loader></div> :
+                <div className="">
+
+                    {
+                        display ? <div className="">
+                            <PrevPage></PrevPage>
+                        </div>
+                            : <div>
+                                <Navbar></Navbar>
+                                <Outlet></Outlet>
+                                <Footer></Footer>
+                            </div>
+                    }
                 </div>
-                    : <div>
-                        <Navbar></Navbar>
-                        <Outlet></Outlet>
-                        <Footer></Footer>
-                    </div>
-            }
+        }
         </>
 
     );
