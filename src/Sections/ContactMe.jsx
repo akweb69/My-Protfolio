@@ -1,18 +1,17 @@
 import { motion } from 'framer-motion';
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaWhatsapp } from 'react-icons/fa';
+import Heading from '../Utils/Heading';
+import imgbox from "../assets/videos/ddd.gif"
+import imgbox1 from "../assets/videos/rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr.gif"
 
 const ContactMe = () => {
     return (
-        <div className="bg-[rgb(0,0,31)] py-10 md:py-20 px-6 flex flex-col items-center">
+        <div
+            style={{ backgroundImage: `url(${imgbox1})` }}
+            className="bg-center bg-cover bg-no-repeat pb-10  px-6 flex flex-col items-center">
             {/* Title with Gradient Text */}
-            <motion.h2
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1 }}
-                className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 mb-10"
-            >
-                Get in Touch
-            </motion.h2>
+            <Heading one={"Contact Info"} two={"Let's Connect With Me"}></Heading>
+
 
             {/* Two Column Layout */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-11/12 mx-auto">
@@ -49,7 +48,7 @@ const ContactMe = () => {
                 </motion.div>
 
                 {/* Right Column: Get in Touch Section */}
-                <motion.div
+                {/* <motion.div
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6 }}
@@ -72,7 +71,10 @@ const ContactMe = () => {
                         <FaWhatsapp className="text-green-500 text-xl mr-3" />
                         <span className="text-white">+880 1768037870</span>
                     </div>
-                </motion.div>
+                </motion.div> */}
+                <div className="w-full h-full flex justify-center items-center">
+                    <img src={imgbox} alt="" />
+                </div>
             </div>
         </div>
     );

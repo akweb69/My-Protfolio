@@ -51,9 +51,9 @@ const Skills = () => {
                     {[...skills, ...skills].map((skill, index) => (
                         <div
                             key={index}
-                            className="flex flex-col items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg p-4 min-w-[120px] h-[140px] shadow-lg"
+                            className="flex flex-col items-center justify-center bg-gradient-to-br from-orange-800 to-indigo-900 rounded-lg p-4 min-w-[120px] h-[140px] shadow-lg"
                         >
-                            <div className={`${skill.color} text-3xl mb-2`}>{skill.icon}</div>
+                            <div className={`${skill.color} text-3xl md:text-4xl font-extrabold mb-2`}>{skill.icon}</div>
                             <h3 className="text-sm text-white font-semibold">{skill.name}</h3>
                             <p className="text-xs text-gray-300">{skill.proficiency}</p>
                         </div>

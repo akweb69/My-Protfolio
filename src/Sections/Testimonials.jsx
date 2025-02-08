@@ -2,6 +2,8 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import imgbox from "../assets/videos/FX StrokeSetter tool for After Effects - Jellyfish loop by Fremox on Dribbble.gif"
+
 const Testimonials = () => {
     var settings = {
         dots: true,
@@ -134,8 +136,15 @@ const Testimonials = () => {
 
 
     return (
-        <div className="w-full py-10 md:py-20 bg-gradient-to-b from-[#040908] to-[rgb(0,0,31)]">
-            <div className="w-11/12 mx-auto">
+        <div
+            style={{
+                backgroundImage: `url(${imgbox})`,
+                backgroundPosition: "center",
+                backgroundSize: "cover"
+            }}
+
+            className="w-full py-10 md:py-20 bg-no-repeat">
+            <div className="w-11/12 mx-auto backdrop-blur-sm">
                 <h1 className="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-pink-600 to-violet-600 w-fit mx-auto">Testimonials</h1>
                 <p className="py-4 pb-10 text-gray-400 text-center">
                     Why Clients Love Working With Me
@@ -144,7 +153,7 @@ const Testimonials = () => {
                 <div className="">
                     <Slider {...settings} className="mx-4 p-4">
                         <div className="px-4">
-                            <div className="p-4 rounded-lg border border-indigo-600 flex justify-center flex-col items-center  ">
+                            <div className="p-4 rounded-lg border backdrop-blur-sm bg-[rgba(0,0,0,0.2)] border-indigo-900 flex justify-center flex-col items-center  ">
 
                                 <img className="w-16 h-16 rounded-full" src={testimonials[0].img} alt="" />
                                 <div className="text-center">
@@ -157,7 +166,7 @@ const Testimonials = () => {
                             </div>
                         </div>
                         <div className="px-4">
-                            <div className="p-4 rounded-lg border border-indigo-600 flex justify-center flex-col items-center  ">
+                            <div className="p-4 rounded-lg border backdrop-blur-sm bg-[rgba(0,0,0,0.2)] border-indigo-900 flex justify-center flex-col items-center  ">
 
                                 <img className="w-16 h-16 rounded-full" src={testimonials[1].img} alt="" />
                                 <div className="text-center">
@@ -170,7 +179,7 @@ const Testimonials = () => {
                             </div>
                         </div>
                         <div className="px-4">
-                            <div className="p-4 rounded-lg border border-indigo-600 flex justify-center flex-col items-center  ">
+                            <div className="p-4 rounded-lg border backdrop-blur-sm bg-[rgba(0,0,0,0.2)] border-indigo-900 flex justify-center flex-col items-center  ">
 
                                 <img className="w-16 h-16 rounded-full" src={testimonials[2].img} alt="" />
                                 <div className="text-center">
@@ -183,7 +192,7 @@ const Testimonials = () => {
                             </div>
                         </div>
                         <div className="px-4">
-                            <div className="p-4 rounded-lg border border-indigo-600 flex justify-center flex-col items-center  ">
+                            <div className="p-4 rounded-lg border backdrop-blur-sm bg-[rgba(0,0,0,0.2)] border-indigo-900 flex justify-center flex-col items-center  ">
 
                                 <img className="w-16 h-16 rounded-full" src={testimonials[3].img} alt="" />
                                 <div className="text-center">
@@ -196,7 +205,7 @@ const Testimonials = () => {
                             </div>
                         </div>
                         <div className="px-4">
-                            <div className="p-4 rounded-lg border border-indigo-600 flex justify-center flex-col items-center  ">
+                            <div className="p-4 rounded-lg border backdrop-blur-sm bg-[rgba(0,0,0,0.2)] border-indigo-900 flex justify-center flex-col items-center  ">
 
                                 <img className="w-16 h-16 rounded-full" src={testimonials[4].img} alt="" />
                                 <div className="text-center">
@@ -209,7 +218,7 @@ const Testimonials = () => {
                             </div>
                         </div>
                         <div className="px-4">
-                            <div className="p-4 rounded-lg border border-indigo-600 flex justify-center flex-col items-center  ">
+                            <div className="p-4 rounded-lg border backdrop-blur-sm bg-[rgba(0,0,0,0.2)] border-indigo-900 flex justify-center flex-col items-center  ">
 
                                 <img className="w-16 h-16 rounded-full" src={testimonials[5].img} alt="" />
                                 <div className="text-center">
@@ -222,7 +231,7 @@ const Testimonials = () => {
                             </div>
                         </div>
                         <div className="px-4">
-                            <div className="p-4 rounded-lg border border-indigo-600 flex justify-center flex-col items-center  ">
+                            <div className="p-4 rounded-lg border backdrop-blur-sm bg-[rgba(0,0,0,0.2)] border-indigo-900 flex justify-center flex-col items-center  ">
 
                                 <img className="w-16 h-16 rounded-full" src={testimonials[6].img} alt="" />
                                 <div className="text-center">
@@ -235,7 +244,7 @@ const Testimonials = () => {
                             </div>
                         </div>
                         <div className="px-4">
-                            <div className="p-4 rounded-lg border border-indigo-600 flex justify-center flex-col items-center  ">
+                            <div className="p-4 rounded-lg border backdrop-blur-sm bg-[rgba(0,0,0,0.2)] border-indigo-900 flex justify-center flex-col items-center  ">
 
                                 <img className="w-16 h-16 rounded-full" src={testimonials[7].img} alt="" />
                                 <div className="text-center">
@@ -248,7 +257,7 @@ const Testimonials = () => {
                             </div>
                         </div>
                         <div className="px-4">
-                            <div className="p-4 rounded-lg border border-indigo-600 flex justify-center flex-col items-center  ">
+                            <div className="p-4 rounded-lg border backdrop-blur-sm bg-[rgba(0,0,0,0.2)] border-indigo-900 flex justify-center flex-col items-center  ">
 
                                 <img className="w-16 h-16 rounded-full" src={testimonials[8].img} alt="" />
                                 <div className="text-center">
@@ -261,7 +270,7 @@ const Testimonials = () => {
                             </div>
                         </div>
                         <div className="px-4">
-                            <div className="p-4 rounded-lg border border-indigo-600 flex justify-center flex-col items-center  ">
+                            <div className="p-4 rounded-lg border backdrop-blur-sm bg-[rgba(0,0,0,0.2)] border-indigo-900 flex justify-center flex-col items-center  ">
 
                                 <img className="w-16 h-16 rounded-full" src={testimonials[9].img} alt="" />
                                 <div className="text-center">
