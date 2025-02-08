@@ -16,7 +16,7 @@ const About = () => {
                     <motion.div
                         whileHover={{ scale: 1.05, rotateY: 10 }}
                         transition={{ duration: 0.5 }}
-                        className="relative"
+                        className="relative w-full"
                         style={{
                             perspective: "1000px",
                         }}
@@ -24,13 +24,13 @@ const About = () => {
                         <img
                             src={profileImage}
                             alt="About Me"
-                            className="w-72 h-72 md:w-96 md:h-96 rounded-3xl shadow-2xl border-4 border-indigo-500"
+                            className="w-full max-h-[400px] object-scale-down md:border  rounded-xl shadow-2xl border-b-2 border-indigo-500"
                             style={{
                                 transformStyle: "preserve-3d",
                                 boxShadow: "0 10px 30px rgba(0, 0, 0, 0.5)",
                             }}
                         />
-                        <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-indigo-600 to-purple-600 opacity-30 blur-lg"></div>
+                        {/* <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-indigo-600 to-purple-600 opacity-30 blur-lg"></div> */}
                     </motion.div>
                 </motion.div>
 
