@@ -150,7 +150,7 @@ const Testimonials = () => {
                                 <div className="text-center">
                                     <h1 className="text-xl font-bold ">{testimonials[0].name}</h1>
                                     <p className="text-gray-300">{testimonials[0].position}</p>
-                                    <p className="text-gray-300">{testimonials[0].details}</p>
+                                    <p className="text-gray-300">{testimonials[0].details.slice(0, 90)}</p>
                                     <p className="text-gray-300">{testimonials[0].location}</p>
                                 </div>
 
@@ -163,7 +163,7 @@ const Testimonials = () => {
                                 <div className="text-center">
                                     <h1 className="text-xl font-bold ">{testimonials[1].name}</h1>
                                     <p className="text-gray-300">{testimonials[1].position}</p>
-                                    <p className="text-gray-300">{testimonials[1].details}</p>
+                                    <p className="text-gray-300">{testimonials[1].details.slice(0, 90)}</p>
                                     <p className="text-gray-300">{testimonials[1].location}</p>
                                 </div>
 
@@ -176,7 +176,7 @@ const Testimonials = () => {
                                 <div className="text-center">
                                     <h1 className="text-xl font-bold ">{testimonials[2].name}</h1>
                                     <p className="text-gray-300">{testimonials[2].position}</p>
-                                    <p className="text-gray-300">{testimonials[2].details}</p>
+                                    <p className="text-gray-300">{testimonials[2].details.slice(0, 90)}</p>
                                     <p className="text-gray-300">{testimonials[2].location}</p>
                                 </div>
 
@@ -189,7 +189,7 @@ const Testimonials = () => {
                                 <div className="text-center">
                                     <h1 className="text-xl font-bold ">{testimonials[3].name}</h1>
                                     <p className="text-gray-300">{testimonials[3].position}</p>
-                                    <p className="text-gray-300">{testimonials[3].details}</p>
+                                    <p className="text-gray-300">{testimonials[3].details.slice(0, 90)}</p>
                                     <p className="text-gray-300">{testimonials[3].location}</p>
                                 </div>
 
@@ -202,7 +202,7 @@ const Testimonials = () => {
                                 <div className="text-center">
                                     <h1 className="text-xl font-bold ">{testimonials[4].name}</h1>
                                     <p className="text-gray-300">{testimonials[4].position}</p>
-                                    <p className="text-gray-300">{testimonials[4].details}</p>
+                                    <p className="text-gray-300">{testimonials[4].details.slice(0, 90)}</p>
                                     <p className="text-gray-300">{testimonials[4].location}</p>
                                 </div>
 
@@ -215,7 +215,7 @@ const Testimonials = () => {
                                 <div className="text-center">
                                     <h1 className="text-xl font-bold ">{testimonials[5].name}</h1>
                                     <p className="text-gray-300">{testimonials[5].position}</p>
-                                    <p className="text-gray-300">{testimonials[5].details}</p>
+                                    <p className="text-gray-300">{testimonials[5].details.slice(0, 90)}</p>
                                     <p className="text-gray-300">{testimonials[5].location}</p>
                                 </div>
 
@@ -228,7 +228,7 @@ const Testimonials = () => {
                                 <div className="text-center">
                                     <h1 className="text-xl font-bold ">{testimonials[6].name}</h1>
                                     <p className="text-gray-300">{testimonials[6].position}</p>
-                                    <p className="text-gray-300">{testimonials[6].details}</p>
+                                    <p className="text-gray-300">{testimonials[6].details.slice(0, 90)}</p>
                                     <p className="text-gray-300">{testimonials[6].location}</p>
                                 </div>
 
@@ -241,7 +241,7 @@ const Testimonials = () => {
                                 <div className="text-center">
                                     <h1 className="text-xl font-bold ">{testimonials[7].name}</h1>
                                     <p className="text-gray-300">{testimonials[7].position}</p>
-                                    <p className="text-gray-300">{testimonials[7].details}</p>
+                                    <p className="text-gray-300">{testimonials[7].details.slice(0, 90)}</p>
                                     <p className="text-gray-300">{testimonials[7].location}</p>
                                 </div>
 
@@ -254,7 +254,7 @@ const Testimonials = () => {
                                 <div className="text-center">
                                     <h1 className="text-xl font-bold ">{testimonials[8].name}</h1>
                                     <p className="text-gray-300">{testimonials[8].position}</p>
-                                    <p className="text-gray-300">{testimonials[8].details}</p>
+                                    <p className="text-gray-300">{testimonials[8].details.slice(0, 90)}</p>
                                     <p className="text-gray-300">{testimonials[8].location}</p>
                                 </div>
 
@@ -267,7 +267,7 @@ const Testimonials = () => {
                                 <div className="text-center">
                                     <h1 className="text-xl font-bold ">{testimonials[9].name}</h1>
                                     <p className="text-gray-300">{testimonials[9].position}</p>
-                                    <p className="text-gray-300">{testimonials[9].details}</p>
+                                    <p className="text-gray-300">{testimonials[9].details.slice(0, 90)}</p>
                                     <p className="text-gray-300">{testimonials[9].location}</p>
                                 </div>
 
