@@ -3,26 +3,19 @@ import { Typewriter } from "react-simple-typewriter";
 import { FaDownload, FaFolderOpen, FaFacebook, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import img1 from "../assets/images/my.png";
-import videobg from "../assets/videos/main1.mp4";
+import backgroundImage from "../assets/videos/bees and bombs.gif";
 
 const Hero = () => {
     return (
-        <div className="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden px-6">
-            {/* Video Background */}
-            <video
-                className="absolute top-0 left-0 w-full h-full object-cover z-0"
-                autoPlay
-                loop
-                muted
-            >
-                <source src={videobg} type="video/mp4" />
-            </video>
-
+        <div
+            className="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden px-6 bg-cover bg-center"
+            style={{ backgroundImage: `url(${backgroundImage})` }}
+        >
             {/* Overlay for better visibility */}
-            <div className="absolute top-0 left-0 w-full h-full bg-black/60 z-1"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-black/60"></div>
 
             {/* Main Content */}
-            <div className="relative w-full max-w-lg z-10 flex flex-col items-center">
+            <div className="relative w-full max-w-lg flex flex-col items-center z-10">
                 {/* Profile Image */}
                 <motion.div
                     initial={{ scale: 0.5, opacity: 0 }}

@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import { SiTailwindcss, SiDaisyui, SiFirebase, SiMongodb, SiExpress, SiNpm } from "react-icons/si";
 import { TfiEmail } from "react-icons/tfi";
+import Heading from "../Utils/Heading";
 
 const skills = [
     { icon: <FaHtml5 />, name: "HTML", color: "text-orange-500", proficiency: "95%" },
@@ -32,11 +33,9 @@ const skills = [
 
 const Skills = () => {
     return (
-        <div className=" py-10 md:py-20 flex flex-col items-center justify-center w-11/12 mx-auto">
+        <div className=" pb-10 flex flex-col items-center justify-center w-11/12 mx-auto">
             {/* Title and Subtitle */}
-            <h2 className="text-4xl font-bold text-white mb-4">My Skills</h2>
-            <p className="text-lg text-gray-300 mb-10">Explore the expertise I bring to the table</p>
-
+            <Heading one={"My Skills"} two={"Explore the expertise I bring to the table"}></Heading>
             {/* Infinite Slider Section */}
             <div className="relative w-full overflow-hidden">
                 <motion.div
@@ -44,7 +43,7 @@ const Skills = () => {
                     initial={{ x: 0 }}
                     animate={{ x: "-100%" }}
                     transition={{
-                        duration: 30,
+                        duration: 10,
                         repeat: Infinity,
                         ease: "linear",
                     }}

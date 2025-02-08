@@ -10,6 +10,79 @@ const ProjectDetails = () => {
 
             <div className="w-11/12 mx-auto">
                 {
+                    id === "0" && <div className="border border-green-900 bg-[rgb(10,50,10)] rounded-lg shadow-lg">
+                        <motion.div
+                            initial={{ y: 100, scale: 0, opacity: 0 }}
+                            animate={{ y: 0, scale: 1, opacity: 1 }}
+                            transition={{ duration: 1, delay: 0.33 }}
+                            className="w-full overflow-hidden rounded-t-lg"
+                        >
+                            <img className="w-full object-cover"
+                                src="https://i.ibb.co/hxj73787/Screenshot-2025-01-30-070904.png"
+                                alt="UniGrants Project"
+                            />
+                        </motion.div>
+                        <div className="p-6">
+                            <h1 className="text-3xl font-bold mb-4 text-gradient-to-r from-green-500 via-blue-500 to-teal-500">
+                                Project Name: UniGrants
+                            </h1>
+                            <p className="mb-4 text-lg">
+                                UniGrants is a comprehensive scholarship management system that allows students to search for suitable universities and scholarships, track their applications, and apply seamlessly through the platform.
+                            </p>
+
+                            <h2 className="text-xl font-semibold mb-2">Key Features:</h2>
+                            <ul className="list-disc pl-6 mb-4 space-y-2">
+                                <li>Scholarship Search: Advanced filtering for finding the right scholarship opportunities.</li>
+                                <li>Application Tracking: Users can track their submitted applications in real-time.</li>
+                                <li>Responsive Layout: Fully optimized for all screen sizes.</li>
+                                <li>Secure User Authentication: Firebase authentication for secure access.</li>
+                                <li>Interactive Dashboard: A personalized student dashboard for managing applications and deadlines.</li>
+                                <li>Admin & Moderator Roles: Admins can approve/reject applications and manage content.</li>
+                                <li>Dark Mode Support: Enhanced UI experience with dark/light mode options.</li>
+                            </ul>
+
+                            <h2 className="text-xl font-semibold mb-2">Built With:</h2>
+                            <ul className="list-disc pl-6 mb-4">
+                                <li>Frontend: React.js, Tailwind CSS, Material UI, Framer Motion</li>
+                                <li>Backend: Node.js, Express.js</li>
+                                <li>Database: MongoDB</li>
+                                <li>Authentication: Firebase Authentication</li>
+                            </ul>
+
+                            <h2 className="text-xl font-semibold mb-2">Additional Features:</h2>
+                            <ul className="list-disc pl-6 mb-4">
+                                <li>SEO Optimized: Helps students find relevant scholarships easily.</li>
+                                <li>Real-time Notifications: Get alerts on application status updates.</li>
+                                <li>Multi-User Role System: Different roles for students, admins, and moderators.</li>
+                            </ul>
+
+                            <h2 className="text-xl font-semibold mb-2">Contact:</h2>
+                            <ul className="list-none pl-6 mb-4">
+                                <li className="flex items-center gap-2"><FaPhone /> +880 1768037870</li>
+                                <li className="flex items-center gap-2"><FaEnvelope /> akwebdev69@gmail.com</li>
+                            </ul>
+
+                            <p className="mb-6">UniGrants – Empowering students with scholarships and opportunities!</p>
+
+                            <div className="flex gap-4">
+                                <motion.div
+                                    whileHover={{ scale: 1.05 }}
+                                    className="bg-green-500 text-white px-6 py-2 rounded-lg flex items-center gap-2 hover:bg-green-600 transition duration-200"
+                                >
+                                    <FaLink /> <a href="https://unigrants.netlify.app" target="_blank" rel="noopener noreferrer">Live Link</a>
+                                </motion.div>
+                                <motion.div
+                                    whileHover={{ scale: 1.05 }}
+                                    className="bg-gray-500 text-white px-6 py-2 rounded-lg flex items-center gap-2 hover:bg-gray-600 transition duration-200"
+                                >
+                                    <FaGithub /> <a href="https://github.com/akweb69/Unigrants-Client-Side" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                                </motion.div>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+                {
                     id === "1" && <div className="border border-indigo-900 bg-[rgb(20,20,70)] rounded-lg shadow-lg">
                         <motion.div
                             initial={{ y: 100, scale: 0, opacity: 0 }}

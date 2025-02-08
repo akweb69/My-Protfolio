@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import { FaReact, FaNodeJs, FaDatabase, FaJs, FaCss3Alt, FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
-import videoBg from "../assets/videos/prev1.mp4";
+import background from "../assets/videos/ʙʟᴀᴄᴋ ɢᴏʟᴅ.gif";
 
 const skills = [
     { icon: <FaReact className='text-blue-400' />, name: "React.js" },
@@ -30,19 +30,11 @@ const PrevPage = () => {
     return (
         <motion.div
             initial={{ scale: 1, y: 0 }}
-            animate={{ scale: 5, }}
+            animate={{ scale: 5 }}
             transition={{ duration: 3, delay: 5 }}
-            className="relative w-full h-screen flex justify-center items-center overflow-hidden">
-            {/* Video Background */}
-            <video
-                autoPlay
-                loop
-                muted
-                className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
-            >
-                <source src={videoBg} type="video/mp4" />
-            </video>
-
+            className="relative w-full h-screen flex justify-center items-center overflow-hidden bg-cover bg-center"
+            style={{ backgroundImage: `url(${background})` }}
+        >
             {/* Content */}
             <motion.div
                 className="w-full max-w-4xl flex flex-col space-y-6 justify-center items-center text-center text-white backdrop-blur-md bg-black/40 p-6 rounded-lg"
@@ -100,19 +92,18 @@ const PrevPage = () => {
                 <motion.div variants={containerVariants} className="flex space-x-4 sm:space-x-6 mt-6">
                     {[{ icon: <FaGithub />, link: "https://github.com/akweb69" },
                     { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/abukalam1" },
-                    { icon: <FaFacebook />, link: "https://facebook.com" }]
-                        .map((social, index) => (
-                            <motion.a
-                                key={index}
-                                href={social.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                variants={childVariants}
-                                className="text-2xl sm:text-3xl hover:text-gray-300 transition-transform transform hover:scale-125"
-                            >
-                                {social.icon}
-                            </motion.a>
-                        ))}
+                    { icon: <FaFacebook />, link: "https://facebook.com" }].map((social, index) => (
+                        <motion.a
+                            key={index}
+                            href={social.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            variants={childVariants}
+                            className="text-2xl sm:text-3xl hover:text-gray-300 transition-transform transform hover:scale-125"
+                        >
+                            {social.icon}
+                        </motion.a>
+                    ))}
                 </motion.div>
             </motion.div>
         </motion.div>

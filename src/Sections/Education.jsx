@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaBootstrap, FaGitAlt, FaGithub, FaDatabase } from "react-icons/fa";
 import { SiTailwindcss, SiFirebase, SiMongodb, SiExpress, SiNpm, SiDaisyui } from "react-icons/si";
+import Heading from "../Utils/Heading";
 
 const skills = [
     { name: "HTML", icon: <FaHtml5 />, color: "text-orange-500" },
@@ -22,12 +23,10 @@ const skills = [
 
 const Education = () => {
     return (
-        <div className=" py-10   px-6 flex flex-col items-center">
+        <div className=" pb-10   px-6 flex flex-col items-center">
             {/* Title and Subtitle */}
-            <h2 className="text-4xl font-bold text-white mb-4">Education</h2>
-            <p className="text-lg text-gray-300 text-center">
-                A glimpse into my academic journey and technical expertise.
-            </p>
+            <Heading one={"Education"} two={"  A glimpse into my academic journey and technical expertise."}></Heading>
+
 
             {/* Two-Column Layout */}
             <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 w-11/12 mx-auto">
